@@ -92,18 +92,27 @@ font-style: oblique;}
 
 /*imagenes de imagenes*/
 
-.carrousel { 
+
+.carrousel {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.carrousel .fotos {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    grid-template-rows: repeat(2, 1fr); /* 2 filas */
-    gap: 20px;  /* Espacio entre las imágenes */
-   flex-direction: row;
-  }
-  
-  .carrousel img {
-    width: 100%; /* Para que las imágenes ocupen todo el espacio disponible */
-    height: auto; /* Para mantener la proporción de aspecto */
-  }
+    grid-template-rows: auto; /* Altura automática */
+    grid-gap: 20px; /* Espacio entre las imágenes */
+}
+
+.carrousel .fotos img {
+    width: 100%; /* Las imágenes ocupan todo el ancho del contenedor */
+    height: auto; /* Altura automática */
+}
+   
+
+   
 
 
 
