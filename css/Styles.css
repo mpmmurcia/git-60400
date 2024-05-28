@@ -7,6 +7,13 @@
    
 }
 
+/*responsive*/
+
+@media only screen and (max-width: 480px) {
+   
+}
+
+
 /*imagen flayer*/
 body{background-color:#2B2B2B;}
 *.imglogo{
@@ -18,15 +25,20 @@ margin: 20px;
 }
 /*adaptacion de descargas a celular*/
 
-.conteiner{width: 75vw;
-    max-width: 1000px;
-    min-width: auto;
-    padding: 10px 30px}
+.conteiner {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura del contenedor igual al 100% del viewport */
+}
+
+.conteiner img {
+    max-width: 60%; /* Reducir el tamaño de la imagen al 30% */
+    height: auto; /* Altura automática */
+}
 
 
-div{display: flex;flex-wrap: wrap-reverse;}
 
-html{scroll-behavior: smooth;}
 
 
 /* botones*/
@@ -60,6 +72,24 @@ header nav ul{
     font-size: 80px;
     letter-spacing: 5PX;
     color: #E6E6DD;}
+
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .titulodehoja {
+        font-size: 48px;
+        font-weight: bold;
+        color: #f8eeee;
+        animation: aparecer 1s ease forwards;
+    }
     
     .parrafos { color: #E6E6DD;;
         font-style: oblique; 
@@ -80,14 +110,29 @@ font-style: oblique;}
     
 
     /*imagen del ep biografia*/
-.img-ep{justify-content: center; justify-items: center;}
-.i1{height: 400px;
-     justify-content: center;
-      justify-items: center;
-       flex-direction: row;
-        margin-top: 20px;
-         margin-bottom: 30px;}
-       
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+            transform: scale(0.5); /* Inicio de la animación: escala al 50% */
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1); /* Fin de la animación: escala al 100% */
+        }
+    }
+    
+    .img-ep {
+        display: flex;
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+        height: 100vh; /* Altura del contenedor igual al 100% del viewport */
+    }
+    
+    .i1 {
+        max-width: 100%; /* Ajustar la imagen al ancho máximo del contenedor */
+        max-height: 100%; /* Ajustar la imagen a la altura máxima del contenedor */
+        animation: aparecer 1s ease forwards; /* Aplicar la animación de aparición */
+    }
 
 
 /*imagenes de imagenes*/
@@ -109,6 +154,20 @@ font-style: oblique;}
 .carrousel .fotos img {
     width: 100%; /* Las imágenes ocupan todo el ancho del contenedor */
     height: auto; /* Altura automática */
+}
+
+/*foto proximo show*/
+
+.fotoshow {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura del contenedor igual al 100% del viewport */
+}
+
+.prox {
+    max-width: 100%; /* Ajustar la imagen al ancho máximo del contenedor */
+    max-height: 100%; /* Ajustar la imagen a la altura máxima del contenedor */
 }
    
 
