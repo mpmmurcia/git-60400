@@ -7,36 +7,27 @@
    
 }
 
+/*imagen flayer*/
+body{background-color:#2B2B2B;}
+*.imglogo{
+margin: 20px;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    justify-items: center;
+}
+/*adaptacion de descargas a celular*/
 
+.conteiner{width: 75vw;
+    max-width: 1000px;
+    min-width: auto;
+    padding: 10px 30px}
 
 
 div{display: flex;flex-wrap: wrap-reverse;}
 
 html{scroll-behavior: smooth;}
-/*body*/
 
-body{background-color:#2B2B2B;}
-*.imglogo{
-margin: 20px;
-    width: 100%;
-    height: 300px;
-    justify-content: center;
-    justify-items: center;
-}
-
-/*titulos de htmls*/
-
-.titulodehoja{
-    display: flex  ;
-    justify-content: center;
-    justify-items: center;
-    margin: 20px; ;
-    font-style: oblique;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 80px;
-    letter-spacing: 5PX;
-    color:#E6E6DD ;
-}
 
 /* botones*/
 
@@ -47,14 +38,34 @@ header nav ul{
     gap: 20px;
     justify-content: center;
     justify-items: center;
-    color: rgb(245, 9, 9);
-     text-decoration: overline;
+    color: rgb(204, 2, 2);
+ 
     }
-     .boton{background-color: rgb(230, 236, 236);
+     .boton{background-color: rgb(234, 240, 240);
         font-weight: 700;
    margin: 10px 30px;
-    
+   font-family: 'Futura Next Light', Arial, sans-serif;
+   
  }
+
+/*titulos de htmls*/
+
+.titulodehoja{
+    display: flex  ;
+    justify-content: center;
+    justify-items: center;
+    margin: 20px; ;
+    font-style: oblique;
+    font-family: 'Futura Next Light', Arial, sans-serif;
+    font-size: 80px;
+    letter-spacing: 5PX;
+    color: #E6E6DD;}
+    
+    .parrafos { color: #E6E6DD;;
+        font-style: oblique; 
+        
+    }
+    
 
       /*footer */
 
@@ -68,33 +79,19 @@ footer{ display: flex;
 font-style: oblique;}
     
 
-    /*imagen del profesor*/
-.img-profesor{display: flex;
-    justify-content: center;
-    justify-items: center;
-}
+    /*imagen del ep biografia*/
+.img-ep{justify-content: center; justify-items: center;}
+.i1{height: 400px; justify-content: center; justify-items: center; flex-direction: row; margin-top: 20px; margin-bottom: 30px;}
        
-
-
-/*lorem*/
-
-   .parrafos { color: #E6E6DD;;
-font-style: oblique;}
-
 
 
 /*imagenes de imagenes*/
 
-   .column{ display: flex; display: inline; padding: 10px 200px;
+   .column{
+   justify-content: center; margin-bottom: 30px; 
 }
 
-/*adaptacion de descargas a celular*/
 
-.conteiner{width: 75vw;
-max-width: 1000px;
-min-width: auto;
-padding: 10px 30px}
-   
     
 
  
