@@ -40,11 +40,11 @@ margin: 20px;
 /*recuadro biografia*/ 
 
 .recuadro {
-    width: 300px; /* Ancho del recuadro */
-    padding: 20px; /* Espacio interior del recuadro */
-    border: 2px solid #f3eeee; /* Borde sólido de 2px */
+    width: 400px; /* Ancho del recuadro */
+    padding: 40px; 
+    border: 2px solid #f3eeee;
     border-radius: 10px; /* Bordes redondeados */
-    background-color: #643737; /* Color de fondo */
+    background-color: #643737; 
 }
 
 /* Estilos para los nombres y números */
