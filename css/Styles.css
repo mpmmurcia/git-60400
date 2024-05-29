@@ -37,6 +37,24 @@ margin: 20px;
     height: auto; /* Altura automática */
 }
 
+/*recuadro biografia*/ 
+
+.recuadro {
+    width: 300px; /* Ancho del recuadro */
+    padding: 20px; /* Espacio interior del recuadro */
+    border: 2px solid #f3eeee; /* Borde sólido de 2px */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #643737; /* Color de fondo */
+}
+
+/* Estilos para los nombres y números */
+.nombre {
+    font-weight: bold; /* Texto en negrita */
+}
+
+.numero {
+    color: #ecf0f3; /* Color azul */
+}
 
 
 
