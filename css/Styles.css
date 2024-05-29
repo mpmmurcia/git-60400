@@ -9,9 +9,16 @@
 
 /*responsive*/
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 1024px) {
    
 }
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+   
+  }
+  @media screen and (max-width: 767px){
+    
+  }
+
 
 
 /*imagen flayer*/
@@ -27,16 +34,17 @@ margin: 20px;
 
 .conteiner {
     display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    height: 100vh; /* Altura del contenedor igual al 100% del viewport */
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
 }
 
 .conteiner img {
-    max-width: 60%; /* Reducir el tamaño de la imagen al 30% */
+    max-width: 60%; 
     height: auto; /* Altura automática */
 }
-
+ .descargastexto{justify-content: center;
+justify-items: center; margin: 50px;}
 /*recuadro biografia*/ 
 
 .recuadro {
@@ -56,7 +64,7 @@ margin: 20px;
     color: #ecf0f3; /* Color azul */
 }
 
-
+.patex{ margin: 80px;}
 
 
 /* botones*/
@@ -141,14 +149,14 @@ font-style: oblique;}
     
     .img-ep {
         display: flex;
-        justify-content: center; /* Centrar horizontalmente */
-        align-items: center; /* Centrar verticalmente */
+        justify-content: center; 
+        align-items: center; 
         height: 100vh; /* Altura del contenedor igual al 100% del viewport */
     }
     
     .i1 {
         max-width: 100%; /* Ajustar la imagen al ancho máximo del contenedor */
-        max-height: 100%; /* Ajustar la imagen a la altura máxima del contenedor */
+        max-height: 100%; 
         animation: aparecer 1s ease forwards; /* Aplicar la animación de aparición */
     }
 
@@ -164,14 +172,14 @@ font-style: oblique;}
 
 .carrousel .fotos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    grid-template-rows: auto; /* Altura automática */
-    grid-gap: 20px; /* Espacio entre las imágenes */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto; 
+    grid-gap: 20px; 
 }
 
 .carrousel .fotos img {
-    width: 100%; /* Las imágenes ocupan todo el ancho del contenedor */
-    height: auto; /* Altura automática */
+    width: 100%;
+    height: auto; 
 }
 
 /*foto proximo show*/
@@ -179,7 +187,7 @@ font-style: oblique;}
 .fotoshow {
     display: flex;
     justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
+    align-items: center; 
     height: 100vh; /* Altura del contenedor igual al 100% del viewport */
 }
 
