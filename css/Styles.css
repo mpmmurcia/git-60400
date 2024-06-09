@@ -14,12 +14,26 @@
    
 }
 
-  @media screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {}
+    nav ul {
+        display: block; /* Cambiar a display block para que los elementos se apilen verticalmente */
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block; /* Cambiar a display block para que los elementos se apilen verticalmente */
+        margin: 10px 0; /* Añadir espacio entre elementos */
+    }
+   
+
+
+
+
+
+
+
+
     
-  }
-
-
-
 /*imagen flayer*/
 body {
     background-color: #2B2B2B;
@@ -40,11 +54,19 @@ body {
     transform: scale(0.80); /* Escala ligeramente al hacer hover */
 }
 
+
+
+
+
+
+
+
 /*texto-bienvenida*/
 
 #texto-bienvenida {
     text-align: center; /* Centrar el texto */
     color: white; /* Color blanco para el texto */
+    list-style: none;
     
 }
 
@@ -54,6 +76,13 @@ body {
     padding: 0; /* Eliminar relleno predeterminado */
     line-height: 1.5; /* Espacio entre líneas */
 }
+
+
+
+
+
+
+
 
 /* seccion redes*/
 
@@ -75,6 +104,12 @@ body {
 #redes ul li {
     margin: 0 50px; /* Espacio entre los elementos */
 }
+
+
+
+
+
+
 
 
 /*cuadro de contrataciones*/
@@ -103,6 +138,12 @@ body {
 .numero {
     color: blue; /* Color del número */
 }
+
+
+
+
+
+
 
 
 /*adaptacion de descargas a celular*/
@@ -140,6 +181,13 @@ body {
     max-width: 600px; /* Ancho máximo del elemento para evitar que se extienda demasiado */
 }
 
+
+
+
+
+
+
+
 /*recuadro biografia*/ 
 
 .recuadro {
@@ -162,11 +210,20 @@ body {
 .patex{ margin: 80px;}
 
 
+
+
+
+
+
+
+
+
+
 /* botones*/
 
 header nav ul {
     list-style: none;
-    display: flex;
+    display:grid;
     gap: 20px;
     justify-content: center;
     justify-items: center;
@@ -191,8 +248,14 @@ header nav ul {
 
 .boton:active {
     transform: translateY(2px); /* Efecto de desplazamiento hacia abajo al ser presionado */
-    border-color: rgba(204, 2, 2, 0.5); /* Cambiar el color del borde al ser presionado */
+    border-color: rgba(204, 22, 22, 0.5); /* Cambiar el color del borde al ser presionado */
 }
+
+
+
+
+
+
 
 
 
@@ -239,6 +302,13 @@ header nav ul {
     }
 
     
+
+
+
+
+
+
+
        
     
     
@@ -253,6 +323,13 @@ footer{ display: flex;
          background-color: rgb(219, 208, 214);
         font-size: 30px;
 font-style: oblique;}
+
+
+
+
+
+
+
     
 
     /*imagen del ep biografia*/
@@ -279,6 +356,12 @@ font-style: oblique;}
         max-height: 100%; 
         animation: aparecer 1s ease forwards; /* Aplicar la animación de aparición */
     }
+
+
+
+
+
+
 
 
 /*imagenes de imagenes*/
@@ -311,6 +394,14 @@ font-style: oblique;}
 }
 
 
+
+
+
+
+
+
+
+
 /*foto proximo show*/
 
 .fotoshow {
@@ -324,7 +415,14 @@ font-style: oblique;}
     max-width: 100%; /* Ajustar la imagen al ancho máximo del contenedor */
     max-height: 100%; /* Ajustar la imagen a la altura máxima del contenedor */
 }
-    /*chatapp*/
+    
+
+
+
+
+
+
+
 
     /* Estilo del icono de WhatsApp flotante */
 .whatsapp-float {
@@ -353,19 +451,3 @@ font-style: oblique;}
     transform: scale(1.05);
     cursor: pointer;
 }
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
