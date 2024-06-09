@@ -36,7 +36,7 @@ margin: 20px;
 #texto-bienvenida {
     text-align: center; /* Centrar el texto */
     color: white; /* Color blanco para el texto */
-    li;
+    
 }
 
 #texto-bienvenida p {
@@ -234,10 +234,9 @@ footer{ display: flex;
      justify-content: center;
       justify-items: center;
       font-family: 'Futura Next Light', Arial, sans-serif
-        margin: 50px;
+        ;
          background-color: rgb(219, 208, 214);
         font-size: 30px;
-    ;
 font-style: oblique;}
     
 
