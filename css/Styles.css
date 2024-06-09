@@ -30,21 +30,107 @@ margin: 20px;
     justify-content: center;
     justify-items: center;
 }
+
+/*texto-bienvenida*/
+
+#texto-bienvenida {
+    text-align: center; /* Centrar el texto */
+    color: white; /* Color blanco para el texto */
+    li;
+}
+
+#texto-bienvenida p {
+    list-style: none;
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar relleno predeterminado */
+    line-height: 1.5; /* Espacio entre líneas */
+}
+
+/* seccion redes*/
+
+#redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#redes ul {
+    list-style-type: none;
+    padding: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#redes ul li {
+    margin: 0 50px; /* Espacio entre los elementos */
+}
+
+
+/*cuadro de contrataciones*/
+
+#Contactos {
+    text-align: center; /* Centrar el texto */
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+.recuadro {
+    width: 300px; /* Ancho del recuadro */
+    padding: 20px;
+    border: 1px solid #ccc; /* Borde para el recuadro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para los nombres y números de contacto */
+.nombre {
+    font-weight: bold;
+}
+
+.numero {
+    color: blue; /* Color del número */
+}
+
+
 /*adaptacion de descargas a celular*/
 
 .conteiner {
     display: flex;
     justify-content: center; 
     align-items: center;
-    height: 100vh; 
+    height: 50vh; 
 }
 
 .conteiner img {
     max-width: 60%; 
     height: auto; /* Altura automática */
 }
- .descargastexto{justify-content: center;
-justify-items: center; margin: 50px;}
+
+
+.container img {
+    max-width: 50%; /* 50% del ancho de la pantalla */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */ /* Cambio de cursor */
+}
+
+
+
+
+
+
+
+
+/*texto de descargas*/
+
+.descargastexto {
+    text-align: center; /* Centrar el texto horizontalmente */
+    margin: 0 auto; /* Centrar el elemento en la página */
+    max-width: 600px; /* Ancho máximo del elemento para evitar que se extienda demasiado */
+}
+
 /*recuadro biografia*/ 
 
 .recuadro {
@@ -52,7 +138,7 @@ justify-items: center; margin: 50px;}
     padding: 40px; 
     border: 2px solid #f3eeee;
     border-radius: 10px; /* Bordes redondeados */
-    background-color: #643737; 
+    background-color: #968b8b; 
 }
 
 /* Estilos para los nombres y números */
@@ -69,22 +155,35 @@ justify-items: center; margin: 50px;}
 
 /* botones*/
 
-header nav ul{
-
+header nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
     justify-content: center;
     justify-items: center;
-    color: rgb(204, 2, 2);
- 
-    }
-     .boton{background-color: rgb(234, 240, 240);
-        font-weight: 700;
-   margin: 10px 30px;
-   font-family: 'Futura Next Light', Arial, sans-serif;
-   
- }
+}
+
+.boton {
+    background-color: white; /* Color de fondo blanco */
+    color: rgb(94, 84, 84); /* Color del texto */
+    font-weight: 700;
+    margin: 10px 30px;
+    font-family: 'Futura Next Light', Arial, sans-serif;
+    border: 2px solid transparent; /* Borde transparente inicialmente */
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: all 0.5s ease; /* Transición suave para el efecto */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+}
+
+.boton:hover {
+    background-color: rgb(234, 240, 240); /* Cambiar el color de fondo al pasar por encima */
+}
+
+.boton:active {
+    transform: translateY(2px); /* Efecto de desplazamiento hacia abajo al ser presionado */
+    border-color: rgba(204, 2, 2, 0.5); /* Cambiar el color del borde al ser presionado */
+}
 
 /*titulos de htmls*/
 
@@ -119,8 +218,14 @@ header nav ul{
     
     .parrafos { color: #E6E6DD;;
         font-style: oblique; 
-        
+        text-align: center; /* Centrar el texto horizontalmente */
+        margin: 0 auto; /* Centrar el elemento en la página */
+        max-width: 600px; /* Ancho máximo del elemento para evitar que se extienda demasiado */  
     }
+
+    
+       
+    
     
 
       /*footer */
@@ -128,10 +233,11 @@ header nav ul{
 footer{ display: flex;
      justify-content: center;
       justify-items: center;
+      font-family: 'Futura Next Light', Arial, sans-serif
         margin: 50px;
-         background-color: rgb(218, 23, 130);
+         background-color: rgb(219, 208, 214);
         font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
+    ;
 font-style: oblique;}
     
 
@@ -163,24 +269,30 @@ font-style: oblique;}
 
 /*imagenes de imagenes*/
 
-
 .carrousel {
     display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+.carrousel .fotos {
+    display: grid; /* Usar grid para organizar las imágenes en una caja ordenada */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajustar automáticamente el número de columnas según el tamaño del contenedor */
+    grid-gap: 20px; /* Espacio entre las imágenes */
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
 }
 
-.carrousel .fotos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: auto; 
-    grid-gap: 20px; 
+.carrousel .fotos img {
+    width: 100%; /* Ancho del 100% para que las imágenes se ajusten al ancho de su contenedor */
+    height: auto; /* Altura automática para mantener la proporción de aspecto */
+    transition: transform 0.3s ease; /* Transición suave al seleccionar la imagen */
 }
 
-.carrousel .fotos img {
-    width: 100%;
-    height: auto; 
+.carrousel .fotos img:hover {
+    transform: scale(1.1); /* Agrandar la imagen al pasar el cursor sobre ella */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima de la imagen */
 }
+
 
 /*foto proximo show*/
 
@@ -195,7 +307,40 @@ font-style: oblique;}
     max-width: 100%; /* Ajustar la imagen al ancho máximo del contenedor */
     max-height: 100%; /* Ajustar la imagen a la altura máxima del contenedor */
 }
-   
+    /*chatapp*/
+
+    /* Estilo del icono de WhatsApp flotante */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.whatsapp-float:hover {
+    background-color: #128c7e;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/*imagen de descargas */
+
+/* Estilos para centrar la imagen y ocupar el 50% de la pantalla */
+
 
    
 
