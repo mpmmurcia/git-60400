@@ -33,7 +33,7 @@
 
 
 
-    
+
 /*imagen flayer*/
 body {
     background-color: #2B2B2B;
@@ -76,7 +76,7 @@ body {
     padding: 0; /* Eliminar relleno predeterminado */
     line-height: 1.5; /* Espacio entre líneas */
 }
-
+ #texto-bienvenida ul li {list-style: none;}
 
 
 
