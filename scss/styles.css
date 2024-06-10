@@ -1,1 +1,197 @@
-/*# sourceMappingURL=styles.css.map */
+@charset "UTF-8";
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* responsive */
+@media only screen and (max-width: 767px) {
+  nav ul {
+    display: block; /* Cambiar a display block para que los elementos se apilen verticalmente */
+    text-align: center;
+  }
+  nav ul li {
+    display: block; /* Cambiar a display block para que los elementos se apilen verticalmente */
+    margin: 10px 0; /* Añadir espacio entre elementos */
+  }
+}
+/* imagen flayer */
+body {
+  background-color: #2B2B2B;
+  margin: 0;
+  padding: 0;
+}
+
+.imglogo {
+  margin: 20px auto; /* Centra horizontalmente */
+  max-width: 100%; /* Ajusta el tamaño máximo */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+  display: block; /* Para centrar correctamente */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Agrega una sombra */
+  transition: transform 0.3s ease-in-out; /* Agrega transición suave al hover */
+}
+.imglogo:hover {
+  transform: scale(0.8); /* Escala ligeramente al hacer hover */
+}
+
+/* texto-bienvenida */
+#texto-bienvenida {
+  text-align: center; /* Centrar el texto */
+  color: white; /* Color blanco para el texto */
+  list-style: none;
+}
+#texto-bienvenida p {
+  list-style: none;
+  margin: 0; /* Eliminar márgenes predeterminados */
+  padding: 0; /* Eliminar relleno predeterminado */
+  line-height: 1.5; /* Espacio entre líneas */
+}
+
+/* seccion redes */
+#redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#redes ul {
+  list-style-type: none;
+  padding: 50px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#redes ul li {
+  margin: 0 50px; /* Espacio entre los elementos */
+}
+
+/* cuadro de contrataciones */
+#Contactos {
+  text-align: center; /* Centrar el texto */
+}
+#Contactos .contenedor {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+}
+#Contactos .recuadro {
+  width: 300px; /* Ancho del recuadro */
+  padding: 20px;
+  border: 1px solid #ccc; /* Borde para el recuadro */
+  border-radius: 5px; /* Bordes redondeados */
+  /* Estilos para los nombres y números de contacto */
+}
+#Contactos .recuadro .nombre {
+  font-weight: bold;
+}
+#Contactos .recuadro .numero {
+  color: blue; /* Color del número */
+}
+
+/* adaptacion de descargas a celular */
+.conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.conteiner img {
+  max-width: 60%;
+  height: auto; /* Altura automática */
+}
+
+.container img {
+  max-width: 50%; /* 50% del ancho de la pantalla */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */ /* Cambio de cursor */
+}
+
+/* texto de descargas */
+.descargastexto {
+  text-align: center; /* Centrar el texto horizontalmente */
+  margin: 0 auto; /* Centrar el elemento en la página */
+  max-width: 600px; /* Ancho máximo del elemento para evitar que se extienda demasiado */
+}
+
+/* recuadro biografia */
+.recuadro {
+  width: 400px; /* Ancho del recuadro */
+  padding: 40px;
+  border: 2px solid #f3eeee;
+  border-radius: 10px; /* Bordes redondeados */
+  background-color: #968b8b;
+  /* Estilos para los nombres y números */
+}
+.recuadro .nombre {
+  font-weight: bold; /* Texto en negrita */
+}
+.recuadro .numero {
+  color: #ecf0f3; /* Color azul */
+}
+.recuadro .patex {
+  margin: 80px;
+}
+
+/* botones */
+header nav ul {
+  list-style: none;
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  justify-items: center;
+}
+header nav ul .boton {
+  background-color: white; /* Color de fondo blanco */
+  color: rgb(94, 84, 84); /* Color del texto */
+  font-weight: 700;
+  margin: 10px 30px;
+  font-family: "Futura Next Light", Arial, sans-serif;
+  border: 2px solid transparent; /* Borde transparente inicialmente */
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: all 0.5s ease; /* Transición suave para el efecto */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+}
+header nav ul .boton:hover {
+  background-color: rgb(234, 240, 240); /* Cambiar el color de fondo al pasar por encima */
+}
+header nav ul .boton:active {
+  transform: translateY(2px); /* Efecto de desplazamiento hacia abajo al ser presionado */
+  border-color: rgba(204, 22, 22, 0.5); /* Cambiar el color del borde al ser presionado */
+}
+
+/* titulos de htmls */
+.titulodehoja {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin: 20px;
+  font-style: oblique;
+  font-family: "Futura Next Light", Arial, sans-serif;
+  font-size: 80px;
+  letter-spacing: 5PX;
+  color: #E6E6DD;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.titulodehoja {
+  font-size: 48px;
+  font-weight: bold;
+  color: #f8eeee;
+  animation: aparecer 1s ease forwards;
+}
+
+.parrafos {
+  color: #E6E6DD;
+  font-style: oblique;
+  text-align: center; /* Centrar el texto horizontalmente */
+  margin: 0 auto;
+}/*# sourceMappingURL=styles.css.map */
